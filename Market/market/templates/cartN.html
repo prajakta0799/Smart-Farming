@@ -1,0 +1,255 @@
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" />
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<title>Bio-Fertilizer Cart</title>
+
+<style type="text/css">
+	.dropdown{
+        position: relative;
+        display: inline-block;
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    .dropdown-content a{
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    .dropdown:hover .dropdown-content{display: block;}
+</style>
+
+</head>
+<body class="bg-light" >
+    <!--Location-->
+    <div style="margin-left: 30% ; margin-top: 5%;">
+     <div class="Dropdown">
+    <button class="dropbtn" style="border-radius: 5px;">Select Location</button>
+    <div class="Dropdown-content">
+        <a href="#Kamthadi">Kamthadi</a>
+        <a href="#Nasarapur">Nasarapur</a>
+         <a href="#Kambre">Shivapur</a>
+       		</div>
+       </div>           
+    </div>
+</div>
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-10 col-11 mx-auto">
+<div class="row mt-5 gx-3">
+<!-- left side div -->
+<div class="col-md-12 col-lg-8 col-11 mx-auto main_cart mb-lg-0 mb-5 shadow">
+<div class="card p-4">
+<h2 class="py-4 font-weight-bold">Cart</h2>
+<div class="row">
+<!-- cart images div -->
+<div class="col-md-5 col-11 mx-auto bg-light d-flex justify-content-center align-items-center shadow product_img">
+<img src="images/img2.png" class="img-fluid" alt="cart img">
+</div>
+
+
+
+
+<!-- cart product details -->
+<div class="col-md-7 col-11 mx-auto px-4 mt-2" id="Kamthadi">
+<div class="row">
+<!-- product name  -->
+<div class="col-6 card-title">
+<h1 class="mb-4 product_name">Chaitanya Nusery</h1>
+<p class="mb-2">Mr. Dhananjay Ingulkar</p>
+<p class="mb-2">Kamthadi phata, near Shivraj Hotel</p>
+<p class="mb-2">Available variety : Flower plants, Fruits Plants, fruit vegitable/vegetable plants</p>
+
+<button onclick="next1()" style="background-color: #b3e6ff;width: 170px;height: 50px; border-radius: 5px;margin-right: 30%;margin-bottom: 30%; border:hidden;">Click here to Buy</button>
+
+</div
+<!-- quantity inc dec -->
+<div class="col-6">
+<ul class="pagination justify-content-end set_quantity">
+
+</ul>
+</div>
+</div>
+<!-- //remover move and price -->
+<div class="row">
+<div class="col-8 d-flex justify-content-between remove_wish">
+
+</div>
+<div class="col-4 d-flex justify-content-end price_money">
+</div>
+</div>
+</div>
+</div>
+</div>
+<hr/>
+<!-- 2nd cart product -->
+<div class="card p-4">
+<h2 class="py-4 font-weight-bold">Cart</h2>
+<div class="row">
+<!-- cart images div -->
+<div class="col-md-5 col-11 mx-auto bg-light d-flex justify-content-center align-items-center shadow product_img">
+<img src="images/img2.png" class="img-fluid" alt="cart img">
+</div>
+
+
+
+
+<!-- cart product details -->
+<div class="col-md-7 col-11 mx-auto px-4 mt-2" id="Nasarapur">
+<div class="row">
+<!-- product name  -->
+<div class="col-6 card-title">
+<h1 class="mb-4 product_name">Samarth Nusery</h1>
+<p class="mb-2">Mr. Sagar Waghmode </p>
+<p class="mb-2">Nasarapur near Tower</p>
+<p class="mb-2">Available variety : Flower plants, Fruits Plants, fruit vegitable/vegetable plants</p>
+<button onclick="next1()" style="background-color: #b3e6ff;width: 170px;height: 50px; border-radius: 5px;margin-right: 30%;margin-bottom: 30%; border:hidden;">Click here to Buy</button>
+
+</div
+<!-- quantity inc dec -->
+<div class="col-6">
+<ul class="pagination justify-content-end set_quantity">
+
+</ul>
+</div>
+</div>
+<!-- //remover move and price -->
+<div class="row">
+<div class="col-8 d-flex justify-content-between remove_wish">
+
+</div>
+<div class="col-4 d-flex justify-content-end price_money">
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- 3rd cart Product -->
+<div class="card p-4">
+<h2 class="py-4 font-weight-bold">Cart</h2>
+<div class="row">
+<!-- cart images div -->
+<div class="col-md-5 col-11 mx-auto bg-light d-flex justify-content-center align-items-center shadow product_img">
+<img src="images/img2.png" class="img-fluid" alt="cart img">
+</div>
+
+
+
+
+<!-- cart product details -->
+<div class="col-md-7 col-11 mx-auto px-4 mt-2" id="Shivapur">
+<div class="row">
+<!-- product name  -->
+<div class="col-6 card-title">
+<h1 class="mb-4 product_name">Gangotri Nusery</h1>
+<p class="mb-2">Mr. Sumal Ingawale</p>
+<p class="mb-2">Shivapur near Highschool</p>
+<p class="mb-2">Available variety : Flower plants, Fruits Plants, fruit vegitable/vegetable plants</p>
+<button onclick="next1()" style="background-color: #b3e6ff;width: 170px;height: 50px; border-radius: 5px;margin-right: 30%;margin-bottom: 30%; border:hidden;">Click here to Buy</button>
+
+
+</div
+<!-- quantity inc dec -->
+<div class="col-6">
+<ul class="pagination justify-content-end set_quantity">
+
+</ul>
+</div>
+</div>
+<!-- //remover move and price -->
+<div class="row">
+<div class="col-8 d-flex justify-content-between remove_wish">
+
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<!--5th cart Product-->
+
+<div class="card p-4">
+<div class="row">
+<!-- cart images div -->
+<div class="col-md-5 col-11 mx-auto bg-light d-flex justify-content-center align-items-center shadow product_img">
+<img src="images/img3.png" class="img-fluid" alt="cart img">
+</div>
+
+
+
+
+<!-- cart product details -->
+<div class="col-md-7 col-11 mx-auto px-4 mt-2" id="Shivapur">
+<div class="row">
+<!-- product name  -->
+<div class="col-6 card-title">
+<h1 class="mb-4 product_name">Vithu Mauli Nursery</h1>
+<p class="mb-2">Mr. Shantaram Chikne </p>
+<p class="mb-2">Shivapur, at Bhivri Phata road</p>
+<p class="mb-2">Available Quantity : 15Kg</p>
+<button onclick="next1()" style="background-color: #b3e6ff;width: 170px;height: 50px; border-radius: 5px;margin-right: 30%;margin-bottom: 30%; border:hidden;">Click here to Buy</button>
+
+ 
+</div>
+<!-- quantity inc dec -->
+<div class="col-6">
+<ul class="pagination justify-content-end set_quantity">
+
+</ul>
+</div>
+</div>
+<!-- //remover move and price -->
+<div class="row">
+<div class="col-8 d-flex justify-content-between remove_wish">
+
+</div>
+<div class="col-4 d-flex justify-content-end price_money">
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+</div>
+
+<!-- right side div -->
+
+
+
+
+<!-- discount code ends -->
+
+<!-- Optional JavaScript -->
+<!-- Popper.js first, then Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript">
+function next()
+   {
+    window.location="c2.html";
+  }   
+  function next1()
+   {
+    window.location="c2.html";
+  }   
+</script>
+</body>
+</html>

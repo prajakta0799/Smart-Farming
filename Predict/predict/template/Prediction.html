@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Farming</title>
+   <!-- <link rel="stylesheet" type="text/css" href="css/Prediction.css">
+    <link rel="stylesheet" type="text/css" href="Prediction2.css">-->
+   <style type="text/css">
+    @media screen and (min-width: 768px)
+       *{
+        overflow-y: hidden;
+       }
+       
+       #crop_pre{
+        margin-left: 35%;
+        width: 120px;
+        display: inline-block;
+       }
+      
+       .form{
+    
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+       }
+       
+    
+   </style>
+   
+</head>
+<body background="img/img3.jpeg">
+
+    <h1 id="crop_prediction" style="text-align: center;color: white;">Crop Prediction Module</h1>
+<form action="/predict" method='post' id="main" style="color: white;">
+  <label id="crop_pre" style="margin-top: 2em;">Type of Soil : </label><input type="number" name="stype" style="width: 70px" ><br><br>
+    <label id="crop_pre">Enter Duration : </label> <input type="number" name="dur" style="width: 70px"><br><br>
+    <label id="crop_pre">Enter Temp : </label> <input type="number" name="temp" style="width: 70px"><br><br>
+    <label id="crop_pre">Enter Rainfall : </label> <input type="number" name="rain" style="width: 70px"><br><br>
+    <label id="crop_pre">Enter pH : </label> <input type="number" name="ph" style="width: 70px"><br><br>
+    <label id="crop_pre">Enter Organic Carbon : </label> <input type="number" name="oc" style="width: 70px"><br><br>
+    <label id="crop_pre">Enter N : </label> <input type="number" name="n" style="width: 70px"><br><br>
+    <label id="crop_pre">Enter P2O5 : </label> <input type="number" name="p2" style="width: 70px"><br><br>
+    <label id="crop_pre">Enter K2O : </label> <input type="number" name="k2" style="width: 70px"><br><br>
+    <label id="crop_pre">Enter S : </label> <input type="number" name="s" style="width: 70px"><br><br>
+    <label id="crop_pre">Enter Zn : </label> <input type="number" name="zn" style="width: 70px"><br><br>
+    <label id="crop_pre">Enter B : </label> <input type="number" name="b" style="width: 70px"><br><br>
+    <label id="crop_pre">Enter Fe : </label> <input type="number" name="fe" style="width: 70px"><br><br>
+    <label id="crop_pre">Enter Mn : </label> <input type="number" name="mn" style="width: 70px"><br><br>
+    <label id="crop_pre">Enter Cu : </label> <input type="number" name="cu" style="width: 70px"><br><br>
+
+
+
+
+        <input style="width: 200px;
+  position: absolute;
+  top: 85%;
+  left: 65%;
+  background-color:rgb(240, 245, 245);
+  font-size: 16px;
+  padding: 16px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;" type="submit">
+    </form>
+</body>
+</html>

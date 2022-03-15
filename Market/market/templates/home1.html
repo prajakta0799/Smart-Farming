@@ -1,0 +1,92 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/*.container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+}*/
+*{
+  background-color: rgb(246, 248, 246);
+  overflow-y: hidden;
+}
+.container .btn {
+  width: 200px;
+  position: absolute;
+  top: 25%;
+  left: 45%;
+  background-color:rgb(245, 247, 247);
+  font-size: 16px;
+  padding: 16px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+.container .btn1 {
+  width: 200px;
+  position: absolute;
+  top: 35%;
+  left: 45%;
+  background-color:rgb(238, 241, 241);
+  font-size: 16px;
+  padding: 16px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+.container .btn2 {
+  width: 200px;
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  background-color:rgb(240, 245, 245);
+  font-size: 16px;
+  padding: 16px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+.container .img{
+  opacity: 1;
+
+}
+</style>
+
+<script type="text/javascript">
+  function next()
+  {
+    window.location="cart.html";
+  }
+  function next1()
+  {
+    window.location="cart2.html";
+  }
+   function next3()
+  {
+    window.location="cart3.html";
+  }
+  
+  
+</script>
+</head>
+<body>
+
+<div class="container">
+  <img class="img" src="{% static 'img3.jpeg'%}" style="width:100%">
+  <button class="btn" onclick="next()">Worm Manure</button>
+  <button class="btn1" onclick="next1()">Cow Dung</button>
+  <button class="btn2" onclick="next3()">Chicken Manure</button>
+</div>
+
+</body>
+</html>

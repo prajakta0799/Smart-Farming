@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign In</title>
+	<link rel="stylesheet" type="text/css" href="SignIn.css">
+	<script type="text/javascript">
+		function fun()
+		{
+			var fname=document.getElementById("Fname");
+			var mame=document.getElementById("Mname");
+			var lname=document.getElementById("Lname");
+     	    
+			if(fname.value.trim()=="")
+     		 {
+       			 alert("First name Blank");
+      		}
+      		/*else if(Mname.value.trim()=="")
+      		{
+        		alert("Middle name Blank");
+        		return false;
+      		}*/
+
+			alert("Succesfullu Submited !")
+
+		}
+    function radio()
+    {
+      var r1=document.getElementById("f");
+      var r2=document.getElementById("m");
+      var r3=document.getElementById("o");
+      if(r1.checked==true)
+        alert("Welcome Miss");
+      if(r2.checked==true)
+        alert("Welcome Mr");
+      if(r3.checked==true)
+        alert("Welcome ");
+    }
+	</script>
+</head>
+<body>
+<div class="page">
+      <div class="form">
+        <div class="login">
+          <div class="login-header">
+            <h3>LOGIN</h3>
+           </div>
+        </div>
+        <form class="login-form" onsubmit="return fun()" >
+         	<input id="name" type="text" placeholder="First Name" name="" autocomplete="off">
+			<br>
+			<input id="Mname" type="text" name="" placeholder="Middle Name" autocomplete="off"><br>
+			<input id="Lname" type="text" placeholder="Last Name" name="" autocomplete="off"><br>
+			<input id="mob" type="Number" maxlength="10" placeholder="Mobile Number" name="" autocomplete="off"><br>
+
+
+      <div class="radio">
+        <label>Gender </label>
+      <input class="f" type="radio" name="gen">
+      <label for="f">Female</label>
+      <input class="m" type="radio" name="gen">
+      <label for="m">Male</label>
+      <input class="o" type="radio" name="gen">
+      <label for="o">Other</label><br><br>
+      </div>
+
+
+      <select class="selectbox" style="width: 150px; height: 30px; border:solid 2px; font-size: 14px;">
+      	<option value="0" >District</option>
+      <option>Ahmednagar</option>
+      <option>Akola</option>
+      <option>Amravati</option>
+      <option>Aurangabad</option>
+      <option>Beed</option>
+      <option>Bhandara</option>
+      <option>Buldhana</option>
+      <option>Chandrapur</option>
+      <option>Dhule</option>
+      <option>Gadchiroli</option>
+      <option>Gondia</option>
+      <option>Hingoli</option>
+      <option>Jalgaon</option>
+      <option>Jalna</option>
+      <option>Kolhapur</option>
+      <option>Latur</option>
+      <option>Mumbai City</option>
+      <option>Mumbai Suburban</option>
+      <option>Nagpur</option>
+      <option>Nanded</option>
+      <option>Nandurbar</option>
+      <option>Nashik</option>
+      <option>Osmanabad</option>
+      <optiotn>Palghar</optiotn>
+      <option>Parbhani</option>
+      <option>Pune</option>
+      <option>Raigad</option>
+      <option>Ratnagiri</option>
+      <option>Sangli</option>
+      <option>Satara</option>
+      <option>Sindhudurg</option>
+      <option>Solapur</option>
+      <option>Thane</option>
+      <option>Wardha</option>
+      <option>Washim</option>
+      <option>Yavatmal</option>
+      <option>Karnataka</option>
+      </select><br>
+
+      <form class="village" >
+      	<input type="text" placeholder="Village Name" name="" required="">
+      </form>
+      <select class="disg" style="width: 150px; height: 30px; border:solid 2px; font-size: 14px;">
+        	<option value="0" >Designation</option>
+        	<option>Farmer</option>
+        	<option>Student</option>
+        	<option>Agrochemist</option>
+        	<option>Other Officer</option>
+        	<option>Normal Person</option>
+        </select>
+
+			<p><h5>Enter the Captcha Send On Your Mobile Number</h5></p>
+			<input type="Number" name="" placeholder="OTP" autocomplete="off">
+         	<button type="submit">Submit</button>
+        </form>
+
+
+
+      </div>
+    </div>
+</form>
+</div>
+</body>
+</html>

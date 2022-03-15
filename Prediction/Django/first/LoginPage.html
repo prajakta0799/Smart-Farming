@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+   function fun()
+   {
+      var user=document.getElementById("uname");
+      var password=document.getElementById("pass");
+
+      if(user.value.trim()=="")
+      {
+        alert("User name Blank");
+        return false;
+      }
+      else if(password.value.trim()=="")
+      {
+        alert("Blank Password");
+        return false;
+      }
+     /*else if(password.value.trim().length<5)
+      {
+        alert("password is Too Short");
+        return false;
+      }*/
+
+   } 
+  </script>
+<link rel="stylesheet" href="LoginPage.css">
+<title> Login </title>
+</head>
+<body>
+  <body>
+    <div class="login-page">
+      <div class="form">
+        <div class="login">
+          <div class="login-header">
+            <h3>LOGIN</h3>
+           
+          </div>
+        </div>
+        <form class="login-form" onsubmit="return fun()" action="next.html">
+          <input id="uname" type="text" name="uname" placeholder="E-mail / Mobile No." required="" autocomplete="off" />
+
+          <input id="pass" type="password" name="pass" placeholder="OTP" required="" />
+         <button type="submit">Submit</button>
+        
+         
+          <p class="message">Not registered? <a href="next.html">Sign Up</a></p>
+        </form>
+      </div>
+    </div>
+</body>
+</body>
+</html>

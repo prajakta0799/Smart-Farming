@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	 <style type="text/css">
+    @media screen and (min-width: 768px)
+       *{
+        overflow-y: hidden;
+       }
+       
+       #crop_pre{
+        margin-left: 40%;
+        width: 120px;
+        display: inline-block;
+       }
+      
+       .form{
+    
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+       }
+     </style>
+
+     <script type="text/javascript">
+      function subbtn()
+      {
+        alert("Your Product Added Successfully...")
+      }
+     	function ifyes()
+     	{
+     		var res=document.getElementByID("transport").value;
+     		if(res=='yes')
+     		{
+     			alert("Transport is Present");
+     			return true;
+     		}
+     		else
+     			alert("Transport is Not Available");
+     	}
+     </script>
+
+
+</head>
+<body>
+
+
+<body background="img/img3.jpeg">
+
+    <h1 id="crop_prediction" style="text-align: center;color: white;">Add Your Bio-Fertilizer</h1>
+
+<form action="seller.html" method='POST' id="main">
+   {% csrf_token %} 
+  <label id="crop_pre" style="margin-top: 2em;">Name of Fertilizer </label><input type="text" name="name" style="width: 70px" autocomplete="none" ><br><br>
+    <label id="crop_pre">Quantility </label> <input type="number" name="quant" style="width: 70px" autocomplete="none"><br><br>
+    <label id="crop_pre">Location </label> <input type="text" name="loc" style="width: 70px" autocomplete="Full Adress"><br><br>
+    <label id="crop_pre">Price </label> <input type="number" name="price" style="width: 70px"><br><br>
+    <label id="crop_pre" onclick="ifyes()">Transport Facility</label> <input type="text" id="transport" name="transport" style="width: 70px" autocomplete="none"><br><br>
+    <label id="crop_pre">Transport Price </label> <input type="number" name="tprice" style="width: 70px" autocomplete="none"><br><br>
+   <!-- <label id="crop_pre">Select Image </label> <input type="file" onchange="readURL(this)" accept="Image/*" name="image" autocomplete="none"><br><br>-->
+     
+
+
+
+  <input style="width: 200px;
+  position: absolute;
+  top: 60%;
+  left: 40%;
+  background-color:rgb(240, 245, 245);
+  font-size: 16px;
+  padding: 16px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;" type="submit">
+    </form>
+</body>
+</html>

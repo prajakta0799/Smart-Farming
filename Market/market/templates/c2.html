@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		*{
+			background-color: fffff;
+		}
+		.cart{
+			margin-left: 30%;
+		}
+		.col-6
+		{
+			padding-left: 10%;
+			border: solid 3px;
+			margin-right: 50%;
+			margin-top: 5%;
+
+		}
+		
+		
+	</style>
+</head>
+<body>
+
+<div class="list" style="margin-left: 30% ; margin-top: 5%;">
+    <label><b> Select Type of Plant you want</b></label><br><br>
+   <a href="#Flower" style="text-decoration: none; border: solid 2px; color: black;padding: 10px;">Flowers</a>
+   <a href="#Fruits" style="text-decoration: none; border: solid 2px; color: black;padding: 10px;" >Fruits</a>
+   <a href="#Veg" style="text-decoration: none; border: solid 2px; color: black;padding: 10px;" >Vegatable</a>
+</div>
+
+<div class="cart">
+
+<h2>Flowers</h2>
+
+<div class="col-6 card-title" id="Flower">
+<h1 class="mb-4 product_name">Rose</h1>
+<p class="mb-2">Price/plant : 50Rs</p>
+<h5 class="</divtext-info">Quantity: <input type="number" min="1" max="25" name="quantity" class="form-control" value="1" style="width: 60px;"> </h5>
+<button >Add To Cart</button>
+<button style="margin-left: 50%;margin-bottom: 7%; ">Remove</button>
+</div>
+	
+
+<div class="col-6 card-title">
+<h1 class="mb-4 product_name">Jasmin</h1>
+<p class="mb-2">Price/plant : <h3 id="price">120</h3></p>
+<h5 class="</divtext-info">Quantity: <input id="amt" type="number" min="1" max="25" name="quantity" class="form-control" value="1" style="width: 60px;"> </h5>
+<button onclick="add(price,amt)" >Add To Cart</button>
+<button onclick="remove()" style="margin-left: 50%;margin-bottom: 7%; ">Remove</button>
+</div>
+
+<h2>Fruits</h2>
+
+<div class="col-6 card-title" id="Fruits">
+<h1 class="mb-4 product_name">Mango</h1>
+<p class="mb-2">Price/plant : 100Rs</p>
+<h5 class="</divtext-info">Quantity: <input type="number" min="1" max="25" name="quantity" class="form-control" value="1" style="width: 60px;"> </h5>
+<button >Add To Cart</button>
+<button style="margin-left: 50%;margin-bottom: 7%; ">Remove</button>
+</div>
+	
+
+<div class="col-6 card-title">
+<h1 class="mb-4 product_name">coconut</h1>
+<p class="mb-2">Price/plant : 200Rs</p>
+<h5 class="</divtext-info">Quantity: <input type="number" min="1" max="25" name="quantity" class="form-control" value="1" style="width: 60px;"> </h5>
+<button >Add To Cart</button>
+<button style="margin-left: 50%;margin-bottom: 7%; ">Remove</button>
+</div>
+
+<h2>Vegetable</h2>
+
+<div class="col-6 card-title" id="Veg">
+<h1 class="mb-4 product_name">Tomato</h1>
+<p class="mb-2">Price/plant : 50Rs</p>
+<h5 class="</divtext-info">Quantity: <input type="number" min="1" max="25" name="quantity" class="form-control" value="1" style="width: 60px;"> </h5>
+<button >Add To Cart</button>
+<button style="margin-left: 50%;margin-bottom: 7%; ">Remove</button>
+</div>
+	
+
+<div class="col-6 card-title">
+<h1 class="mb-4 product_name">Onion</h1>
+<p class="mb-2">Price/plant : 60Rs</p>
+<h5 class="</divtext-info">Quantity: <input type="number" min="1" max="25" name="quantity" class="form-control" value="1" style="width: 60px;"> </h5>
+<button >Add To Cart</button>
+<button style="margin-left: 50%;margin-bottom: 7%; ">Remove</button>
+</div>
+
+</div>
+
+
+<script type="text/javascript">
+	function add(price,amt)
+	{
+		var a= document.addElementById('price').innerHTML;
+		var b= document.addElementById('amt').value;
+		alert(a);
+	}
+</script>
+</body>
+</html>

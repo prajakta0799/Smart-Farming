@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	
+</head>
+<body>
+	<script type="text/javascript">
+		function fun()
+		{
+			var i=document.getElementById('p').innerHTML;
+			var j=document.getElementById('itemval').value;
+			alert(i*j);
+			//console.log(i.value);
+		}
+	
+
+	</script>
+<h3>Total</h3>
+<div >
+<h5 class="text-info">Quantity: <input id="itemval" type="number" min="0" max="25" name="quantity" class="form-control" value="1" style="width: 60px;">
+<h3>Rs.<span id="p">12 </span> </h3>
+<button onclick="fun()">Add To Cart</button>
+</div>
+
+</body>
+</html>

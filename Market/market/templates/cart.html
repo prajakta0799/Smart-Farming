@@ -1,0 +1,471 @@
+{% load static %}
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" />
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<title>Bio-Fertilizer Cart</title>
+
+<style type="">
+	    .dropdown{
+        position: relative;
+        display: inline-block;
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    .dropdown-content a{
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    .dropdown:hover .dropdown-content{display: block;}
+</style>
+
+</head>
+<body class="bg-light">
+    
+<div style="margin-left: 30% ; margin-top: 5%; border-radius: 5px;">
+      <div class="Dropdown">
+   <button class="dropbtn" style="border-radius: 5px;">Select Location</button>
+    <div class="Dropdown-content"> 
+        <a href="#Nasarapur">Nasarapur</a>
+        <a href="#Kamthadi">Kamthadi</a>
+         <a href="#Narhe">Narhe</a>
+        <a href="#Umre">Umre</a>
+       
+       </div>           
+    </div>
+</div>
+
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-10 col-11 mx-auto">
+<div class="row mt-5 gx-3">
+<!-- left side div -->
+<div class="col-md-12 col-lg-8 col-11 mx-auto main_cart mb-lg-0 mb-5 shadow">
+<div class="card p-4">
+<h2 class="py-4 font-weight-bold">Cart</h2>
+<div class="row">
+<!-- cart images div -->
+<div class="col-md-5 col-11 mx-auto bg-light d-flex justify-content-center align-items-center shadow product_img">
+<img src="{ % static 'img3.jpeg' % }" class="img-fluid" alt="cart img">
+</div>
+
+
+
+
+<!-- cart product details -->
+<div class="col-md-7 col-11 mx-auto px-4 mt-2" id="Nasarapur">
+<div class="row">
+<!-- product name  -->
+<div class="col-6 card-title">
+<h1 class="mb-4 product_name">Worm Manure</h1>
+<p class="mb-2">Mr. Shekhar Walhekar</p>
+<p class="mb-2">Nasarapur</p>
+<p class="mb-2">Available Quantity : <span id="quant">10</span> kg</p>
+<p class="mb-2" style="display: inline-block;" >Price/Kg :<h4 style="display: inline-block;" id="val"> 100</h4> /-</p>
+<h5 class="</divtext-info">Quantity: <input id="itm" type="number" min="1" max="25" name="quantity" class="form-control" value="1" style="width: 60px;"> </h5>
+<button onclick="add(val,itm)" style="background-color: #b3e6ff;width: 100px;height: 50px; border-radius: 5px;margin-right: 30%;margin-bottom: 30%; border:hidden;">Add</button>
+
+<p class="mb-2">Transport : <span id="transport">Yes</span></p>
+<p>Want Transport</p>
+<button onclick="Yes()" class="mb-4" style="position: static;">Yes</button>
+
+<p class="mb-2">Transport Cost : <span id="cost"> 10</span> /-</p>
+</div
+
+
+
+<!-- quantity inc dec -->
+<div class="col-6">
+<ul class="pagination justify-content-end set_quantity">
+
+</ul>
+</div>
+</div>
+<!-- //remover move and price -->
+<div class="row">
+<div class="col-8 d-flex justify-content-between remove_wish">
+
+</div>
+<div class="col-4 d-flex justify-content-end price_money">
+<h3>Rs<span id="itemval">0.00 </span></h3>
+</div>
+</div>
+</div>
+</div>
+</div>
+<hr/>
+<!-- 2nd cart product -->
+<div class="card p-4">
+<h2 class="py-4 font-weight-bold">Cart</h2>
+<div class="row">
+<!-- cart images div -->
+<div class="col-md-5 col-11 mx-auto bg-light d-flex justify-content-center align-items-center shadow product_img">
+<img src="img/cow1.webp" class="img-fluid" alt="cart img" style="height: 100%; width: 100%;">
+</div>
+
+
+
+
+<!-- cart product details -->
+<div class="col-md-7 col-11 mx-auto px-4 mt-2" id="Khadki">
+<div class="row">
+<!-- product name  -->
+<div class="col-6 card-title" on>
+<h1 class="mb-4 product_name">Worm Manure</h1>
+<p class="mb-2">Mr. Mayur Khambalkar</p>
+<p class="mb-2">Khadki</p>
+<p class="mb-2">Available Quantity : <span id="quant1"> 30</span> kg</p>
+<p class="mb-2" style="display: inline-block;" >Price/Kg :<h4 style="display: inline-block;" id="val1"> 110</h4> /-</p>
+<h5 class="</divtext-info">Quantity: <input id="itm1" type="number" min="0" max="25" name="quantity" class="form-control" value="1" style="width: 60px;"> </h5>
+<p class="mb-2">Transport : <span id="transport"> Yes</span></p>
+<p class="mb-2">Transport Cost : <span id="cost"> 40</span> /-</p>
+<button onclick="add1(val1,itm1)" style="background-color: #b3e6ff;width: 100px;height: 50px; border-radius: 5px;margin-right: 30%;margin-bottom: 30%; border:hidden;">Add</button>
+
+</div
+<!-- quantity inc dec -->
+<div class="col-6">
+<ul class="pagination justify-content-end set_quantity">
+
+</ul>
+</div>
+</div>
+<!-- //remover move and price -->
+<div class="row">
+<div class="col-8 d-flex justify-content-between remove_wish">
+
+</div>
+
+<div class="col-4 d-flex justify-content-end price_money">
+<h3>Rs. <span></span><span id="itemval1">0.00 </span></h3>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- 3rd cart Production -->
+<div class="card p-4">
+<h2 class="py-4 font-weight-bold">Cart</h2>
+<div class="row">
+<!-- cart images div -->
+<div class="col-md-5 col-11 mx-auto bg-light d-flex justify-content-center align-items-center shadow product_img">
+<img src="img/cow.jpeg" class="img-fluid" alt="cart img">
+</div>
+
+
+
+
+<!-- cart product details -->
+<div class="col-md-7 col-11 mx-auto px-4 mt-2" id="Khadki">
+<div class="row">
+<!-- product name  -->
+<div class="col-6 card-title" on>
+<h1 class="mb-4 product_name">worm manure</h1>
+<p class="mb-2">Mr. Niranjan Sonawne</p>
+<p class="mb-2">Khadki</p>
+<p class="mb-2">Available Quantity : <span id="quant2"> 30</span> kg</p>
+<p class="mb-2" style="display: inline-block;" >Price/Kg :<h4 style="display: inline-block;" id="val2"> 100</h4> /-</p>
+<h5 class="</divtext-info">Quantity: <input id="itm2" type="number" min="0" max="25" name="quantity" class="form-control" value="1" style="width: 60px;"> </h5>
+<p class="mb-2">Transport : <span id="transport"> No</span></p>
+<p class="mb-2">Transport Cost : <span id="cost"> 0</span> /-</p>
+
+<button onclick="add2(val2,itm2)" style="background-color: #b3e6ff;width: 100px;height: 50px; border-radius: 5px;margin-right: 30%;margin-bottom: 30%; border:hidden;">Add</button>
+
+</div
+<!-- quantity inc dec -->
+<div class="col-6">
+<ul class="pagination justify-content-end set_quantity">
+
+</ul>
+</div>
+</div>
+<!-- //remover move and price -->
+<div class="row">
+<div class="col-8 d-flex justify-content-between remove_wish">
+
+</div>
+
+<div class="col-4 d-flex justify-content-end price_money">
+<h3>Rs. <span></span><span id="itemval2">0.00 </span></h3>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- 4th cart Product -->
+
+<div class="card p-4">
+<div class="row">
+<!-- cart images div -->
+<div class="col-md-5 col-11 mx-auto bg-light d-flex justify-content-center align-items-center shadow product_img">
+<img src="images/img3.png" class="img-fluid" alt="cart img">
+</div>
+
+
+
+
+<!-- cart product details -->
+<div class="col-md-7 col-11 mx-auto px-4 mt-2" id="Kamthadi">
+<div class="row">
+<!-- product name  -->
+<div class="col-6 card-title">
+<h1 class="mb-4 product_name">Worm Manure</h1>
+<p class="mb-2">Mr. Sagar Bathe</p>
+<p class="mb-2">Kamthadi</p>
+<p class="mb-2">Available Quantity : <span id="quant3"> 20</span> kg</p>
+<p class="mb-2" style="display: inline-block;" >Price/Kg :<h4 style="display: inline-block;" id="val3"> 120</h4> /-</p>
+<h5 class="text-info">Quantity: <input id="itm3" type="number" min="1" max="25" name="quantity" class="form-control" value="1" style="width: 60px;"> 
+    <p class="mb-2">Transport : <span id="transport"> No</span></p>
+<p class="mb-2">Transport Cost : <span id="cost"> 0</span> /-</p>
+</div>
+
+<button onclick="add3(val3,itm3)" style="background-color: #b3e6ff;width: 100px;height: 50px; border-radius: 5px;margin-right: 30%;margin-bottom: 30%; border:hidden;">Add</button>
+
+<!-- quantity inc dec -->
+<div class="col-6">
+<ul class="pagination justify-content-end set_quantity">
+
+</ul>
+</div>
+</div>
+<!-- //remover move and price -->
+<div class="row">
+<div class="col-8 d-flex justify-content-between remove_wish">
+
+</div>
+<div class="col-4 d-flex justify-content-end price_money">
+<h3>Rs.<span id="itemval3">0.00 </span> </h3>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- 4th Cart Product -->
+<div class="card p-4">
+<h2 class="py-4 font-weight-bold">Cart</h2>
+<div class="row">
+<!-- cart images div -->
+<div class="col-md-5 col-11 mx-auto bg-light d-flex justify-content-center align-items-center shadow product_img">
+<img src="img/cow.jpeg" class="img-fluid" alt="cart img">
+</div>
+
+
+
+
+<!-- cart product details -->
+<div class="col-md-7 col-11 mx-auto px-4 mt-2" id="Umre">
+<div class="row">
+<!-- product name  -->
+<div class="col-6 card-title" on>
+<h1 class="mb-4 product_name">Worm Manure</h1>
+<p class="mb-2">Mr. Mayur Khambalkar</p>
+<p class="mb-2">Umre</p>
+<p class="mb-2">Available Quantity : <span id="quant4"> 30</span> kg</p>
+<p class="mb-2" style="display: inline-block;" >Price/Kg :<h4 style="display: inline-block;" id="val4"> 150</h4> /-</p>
+<h5 class="</divtext-info">Quantity: <input id="itm4" type="number" min="0" max="25" name="quantity" class="form-control" value="1" style="width: 60px;"> </h5>
+<p class="mb-2">Transport : <span id="transport"> Yes</span></p>
+<p class="mb-2">Transport Cost : <span id="cost"> 30</span> /-</p>
+<button onclick="add4(val4,itm4)" style="background-color: #b3e6ff;width: 100px;height: 50px; border-radius: 5px;margin-right: 30%;margin-bottom: 30%; border:hidden;">Add</button>
+
+</div
+<!-- quantity inc dec -->
+<div class="col-6">
+<ul class="pagination justify-content-end set_quantity">
+
+</ul>
+</div>
+</div>
+<!-- //remover move and price -->
+<div class="row">
+<div class="col-8 d-flex justify-content-between remove_wish">
+
+</div>
+
+<div class="col-4 d-flex justify-content-end price_money">
+<h3>Rs. <span></span><span id="itemval4">0.00 </span></h3>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+<!-- right side div -->
+<div class="col-md-12 col-lg-4 col-11 mx-auto mt-lg-0 mt-md-5">
+<div class="right_side p-3 shadow bg-white">
+<h2 class="product_name mb-5">The Total Amount Of</h2>
+<div class="price_indiv d-flex justify-content-between">
+<p>Product amount</p>
+<p>Rs.<span id="product_total_amt">0.00</span></p>
+</div>
+<div class="price_indiv d-flex justify-content-between">
+
+</div>
+<hr />
+<div class="total-amt d-flex justify-content-between font-weight-bold">
+<p>The total amount</p>
+<p>Rs.<span id="total_cart_amt">0.00</span></p>
+</div>
+<button onclick="total()" class="btn btn-primary text-uppercase">Checkout</button>
+<button class="btn btn-primary text-uppercase" onclick="next()">Payment</button>
+
+</div>
+<!-- discount code part -->
+<div class="discount_code mt-3 shadow">
+<div class="card">
+<div class="card-body">
+
+<div class="collapse" id="collapseExample">
+<div class="mt-3">
+<input type="text" name="" id="discount_code1" class="form-control font-weight-bold" placeholder="Enter the discount code">
+</div>
+<button class="btn btn-primary btn-sm mt-3" onclick="discount_code()">Apply</button>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+<!-- discount code ends -->
+<div class="mt-3 shadow p-3 bg-white">
+<div class="pt-4">
+<h5 class="mb-4">Expected delivery date</h5>
+<p>Within 3 days</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Optional JavaScript -->
+<!-- Popper.js first, then Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+
+function add(val,itm)
+{
+    var i=document.getElementById('val').innerHTML;
+    var j=document.getElementById('itm').value;
+   // var k=document.getElementById('total').innerHTML;
+    //alert(i*j);
+    document.getElementById('itemval').innerHTML=i*j;
+    var final=document.getElementById('quant').innerHTML;
+    document.getElementById('quant').innerHTML=final-j;
+
+
+}
+function add1(val1,itm1)
+{
+    var i=document.getElementById('val1').innerHTML;
+    var j=document.getElementById('itm1').value;
+   // var k=document.getElementById('total').innerHTML;
+    //alert(i*j);
+    document.getElementById('itemval1').innerHTML=i*j;
+    var final=document.getElementById('quant1').innerHTML;
+    document.getElementById('quant1').innerHTML=final-j;
+
+
+}
+function add2(val2,itm2)
+{
+    var i=document.getElementById('val2').innerHTML;
+    var j=document.getElementById('itm2').value;
+   // var k=document.getElementById('total').innerHTML;
+    //alert(i*j);
+    document.getElementById('itemval2').innerHTML=i*j;
+    var final=document.getElementById('quant2').innerHTML;
+    document.getElementById('quant2').innerHTML=final-j;
+
+
+}
+function add3(val3,itm3)
+{
+    var i=document.getElementById('val3').innerHTML;
+    var j=document.getElementById('itm3').value;
+   // var k=document.getElementById('total').innerHTML;
+    //alert(i*j);
+    document.getElementById('itemval3').innerHTML=i*j;
+    var final=document.getElementById('quant3').innerHTML;
+    document.getElementById('quant3').innerHTML=final-j;
+
+
+}
+
+
+//For Total of all Product
+function total()
+{
+   var n1=parseInt(document.getElementById('itemval').innerHTML);
+   var n2=parseInt (document.getElementById('itemval1').innerHTML);
+   var n3=parseInt (document.getElementById('itemval2').innerHTML);
+   var n4=parseInt (document.getElementById('itemval3').innerHTML);
+  
+   var ans =n1+n2+n3+n4;
+   //alert(ans);
+
+    
+
+    document.getElementById('total_cart_amt').innerHTML=ans;
+    
+} 
+
+// For Payment
+function next()
+        {
+          window.location="payment.html";
+        }
+
+//for TRansportation
+function Yes()
+{
+	var ans=document.getElementById('transport').innerHTML;
+	//alert(ans)
+	var str='No';
+
+	var i=ans.localeCompare(str);
+	//alert(i);
+
+	if(i==0)
+	{
+		alert("Transportation is not Available");
+	}
+	else
+	{
+	var cost=parseInt(document.getElementById('cost').innerHTML);
+
+	var total=parseInt(document.getElementById('itemval').innerHTML);
+	//alert(cost);
+	var answer=total+cost;
+	//alert(answer);
+	document.getElementById('itemval').innerHTML=answer;
+	
+		
+	}
+
+
+
+	
+}
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<div class="card p-4">
+<h2 class="py-4 font-weight-bold">Cart</h2>
+<div class="row">
+<!-- cart images div -->
+<div class="col-md-5 col-11 mx-auto bg-light d-flex justify-content-center align-items-center shadow product_img">
+<img src="img/cow.jpeg" class="img-fluid" alt="cart img">
+</div>
+
+
+
+
+<!-- cart product details -->
+<div class="col-md-7 col-11 mx-auto px-4 mt-2" id="Khadki">
+<div class="row">
+<!-- product name  -->
+<div class="col-6 card-title" on>
+<h1 class="mb-4 product_name">Cow Dung</h1>
+<p class="mb-2">Mr. Nivrutti Pangarkar</p>
+<p class="mb-2">Khadki</p>
+<p class="mb-2">Available Quantity : <span id="quant"> 20</span> kg</p>
+<p class="mb-2" style="display: inline-block;" >Price/Kg :<h4 style="display: inline-block;" id="val"> 120</h4> /-</p>
+<h5 class="</divtext-info">Quantity: <input id="itm" type="number" min="0" max="25" name="quantity" class="form-control" value="1" style="width: 60px;"> </h5>
+
+<p class="col-4 d-flex justify-content-end price_money"><h3>Rs. <span></span><span id="itemval">0.00 </span></h3></p>
+
+<button onclick="add(val,itm,quant,itemval)" style="background-color: #b3e6ff;width: 100px;height: 50px; border-radius: 5px;margin-right: 30%;margin-bottom: 30%; border:hidden;">Add</button>
+
+</div
+<!-- quantity inc dec -->
+
+</div>
+<!-- //remover move and price -->
+
+<div class="card p-4">
+<h2 class="py-4 font-weight-bold">Cart</h2>
+<div class="row">
+<!-- cart images div -->
+<div class="col-md-5 col-11 mx-auto bg-light d-flex justify-content-center align-items-center shadow product_img">
+<img src="img/cow.jpeg" class="img-fluid" alt="cart img">
+</div>
+
+
+
+
+<!-- cart product details -->
+<div class="col-md-7 col-11 mx-auto px-4 mt-2" id="Khadki">
+<div class="row">
+<!-- product name  -->
+<div class="col-6 card-title" on>
+<h1 class="mb-4 product_name">Cow Dung</h1>
+<p class="mb-2">Mr. Nivrutti Pangarkar</p>
+<p class="mb-2">Khadki</p>
+<p class="mb-2">Available Quantity : <span id="quant1"> 20</span> kg</p>
+<p class="mb-2" style="display: inline-block;" >Price/Kg :<h4 style="display: inline-block;" id="val1"> 120</h4> /-</p>
+<h5 class="</divtext-info">Quantity: <input id="itm1" type="number" min="0" max="25" name="quantity" class="form-control" value="1" style="width: 60px;"> </h5>
+
+<p class="col-4 d-flex justify-content-end price_money"><h3>Rs. <span></span><span id="itemval1">0.00 </span></h3></p>
+
+<button onclick="add(val1,itm1,quant1,itemval1)" style="background-color: #b3e6ff;width: 100px;height: 50px; border-radius: 5px;margin-right: 30%;margin-bottom: 30%; border:hidden;">Add</button>
+
+</div
+
+
+</div>
+
+
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</body>
+
+<script type="text/javascript">
+
+function add(val,itm,quant,itemval)
+{
+    var i=document.getElementById('val').innerHTML;
+    var j=document.getElementById('itm').value;
+   //	var k=document.getElementById('itemval').innerHTML;
+   	//alert(i*j);
+   	//const top;
+	document.getElementById('itemval').innerHTML=i*j;
+	
+	//top=final;
+	//console.log(top);
+	final=document.getElementById('quant').innerHTML;
+	//const top=final;
+	document.getElementById('quant').innerHTML=final-j;
+	
+	//alert(final-j);
+
+}
+
+
+
+
+</script>
+
+</html>
